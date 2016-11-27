@@ -1,0 +1,22 @@
+TARGET = tst_events
+MODULES = events.o model.o tst_events.o
+
+$(TARGET): $(MODULES)
+	cc68x -g $(MODULES) -o $(TARGET)
+
+
+events.o: events.c events.h
+	cc68x -g -c events.c
+
+model.o: model.c model.h
+	cc68x -g -c model.c
+	
+$(TARGET).o: $(TARGET).c events.h model.h
+	cc68x -g -c $(TARGET).c
+	
+all:
+	make clean
+	make
+	
+clean:
+	$(RM) -f $(TARGET) *.o *~

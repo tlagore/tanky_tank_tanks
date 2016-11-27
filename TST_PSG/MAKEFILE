@@ -1,0 +1,27 @@
+TARGET = tst_psg
+MODULES = tst_psg.o psg.o music.o input.o effects.o
+
+$(TARGET): $(MODULES)
+	cc68x -g $(MODULES) -o $(TARGET)
+	
+effects.o: effects.c effects.h psg.h
+	cc68x -g -c effects.c	
+
+music.o: music.c music.h psg.h
+	cc68x -g -c music.c
+	
+psg.o: psg.c psg.h
+	cc68x -g -c psg.c
+	
+input.o: input.c input.h
+	cc68x -g -c input.c
+	
+$(TARGET).o: $(TARGET).c 
+	cc68x -g -c tst_psg.c
+	
+all:
+	make clean
+	make
+	
+clean:
+	$(RM) -f $(TARGET) *.o *~

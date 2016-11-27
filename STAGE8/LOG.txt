@@ -1,0 +1,5 @@
+Where I left off:
+
+1. Switched randomized_attack to events, now the tank no longer actually changes attacks after first randomized attack
+2. Buffer page flipping isn't working at all
+3. 

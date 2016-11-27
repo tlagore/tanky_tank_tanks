@@ -1,0 +1,18 @@
+TARGET = tst_rast
+MODULES = raster.o tst_rast.o
+
+$(TARGET): $(MODULES)
+	cc68x -g $(MODULES) -o $(TARGET)
+
+raster.o: raster.c raster.h
+	cc68x -g -c raster.c
+	
+$(TARGET).o: $(TARGET).c raster.h bitmaps.h
+	cc68x -g -c tst_rast.c
+	
+all:
+	make clean
+	make
+	
+clean:
+	$(RM) -f $(TARGET) *.o *~

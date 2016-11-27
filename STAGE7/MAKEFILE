@@ -1,0 +1,48 @@
+TARGET = tanks
+MODULES = effects.o music.o psg.o raster.o tanks.o events.o model.o renderer.o bitmaps.o font.o offsets.o input.o
+
+$(TARGET): $(MODULES)
+	cc68x -g $(MODULES) -o $(TARGET)
+
+effects.o: effects.c effects.h psg.h
+	cc68x -g -c effects.c		
+
+music.o: music.c music.h
+	cc68x -g -c music.c
+	
+psg.o: psg.c psg.h
+	cc68x -g -c psg.c
+	
+input.o: input.c input.h
+	cc68x -g -c input.c
+
+offsets.o: offsets.c offsets.h defines.h
+	cc68x -g -c offsets.c
+	
+bitmaps.o: bitmaps.c bitmaps.h defines.h
+	cc68x -g -c bitmaps.c
+	
+font.o: font.c font.h
+	cc68x -g -c font.c
+	
+raster.o: raster.c raster.h types.h defines.h
+	cc68x -g -c raster.c
+	
+events.o: events.c events.h offsets.h defines.h
+	cc68x -g -c events.c
+
+model.o: model.c model.h types.h defines.h
+	cc68x -g -c model.c
+	
+renderer.o: renderer.c renderer.h types.h offsets.h
+	cc68x -g -c renderer.c
+	
+$(TARGET).o: $(TARGET).c
+	cc68x -g -c tanks.c
+	
+all:
+	make clean
+	make
+	
+clean:
+	$(RM) -f $(TARGET) *.o *~

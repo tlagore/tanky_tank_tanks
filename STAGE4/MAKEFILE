@@ -1,0 +1,36 @@
+TARGET = tst_rend
+MODULES = raster.o tst_rend.o events.o model.o renderer.o bitmaps.o font.o offsets.o
+
+$(TARGET): $(MODULES)
+	cc68x -g $(MODULES) -o $(TARGET)
+
+offsets.o: offsets.c offsets.h defines.h
+	cc68x -g -c offsets.c
+	
+bitmaps.o: bitmaps.c bitmaps.h defines.h
+	cc68x -g -c bitmaps.c
+	
+font.o: font.c font.h
+	cc68x -g -c font.c
+	
+raster.o: raster.c raster.h types.h defines.h
+	cc68x -g -c raster.c
+	
+events.o: events.c events.h offsets.h defines.h
+	cc68x -g -c events.c
+
+model.o: model.c model.h types.h defines.h
+	cc68x -g -c model.c
+	
+renderer.o: renderer.c renderer.h types.h offsets.h
+	cc68x -g -c renderer.c
+	
+$(TARGET).o: $(TARGET).c model.h renderer.h defines.h events.h
+	cc68x -g -c tst_rend.c
+	
+all:
+	make clean
+	make
+	
+clean:
+	$(RM) -f $(TARGET) *.o *~
