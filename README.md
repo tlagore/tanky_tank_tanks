@@ -19,7 +19,7 @@ Unfortunately it has been a loooong time since I have used/run this code, but es
 
 Download the engine and place the code somewhere in the virtual file system of the emulator. Thankfully, I at least was competent enough at the time to create a makefile for every version (I believe every version.. the very earliest ones might not, but they do not really matter in terms of the project). Should be able to just compile and run... that is up until stage 10C, explained below.
 
-##Stages##
+## Stages ##
 Each stage is a single iteration of the project, implementing new features. Unfortunately, I have somehow lost Stage10A and Stage10B. Stage10C thankfully encompasses both 10A and 10B. 
 
 Stage 10 was to remove the operating system control completely by implementing our own interrupts (overwriting the vector table).
