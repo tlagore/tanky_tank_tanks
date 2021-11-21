@@ -7,7 +7,7 @@ Here's a gross little hand recorded video of an [early version](https://www.yout
 Tanky tank tanks was a project written for the 1984 Atari using the [STEem Engine Atari Emulator](http://tamw.atari-users.net/steem.htm).
 It was written as a school project for a course, Computing Machinery 2. 
 
-This project interacts directly with (virtual) hardware to create sound effects, music, animations, and more. A great learning project if you want to understand how the low level stuff (originally) worked. 
+This project interacts directly with (virtual) hardware to create sound effects, music, hand designed sprites, animations, and more. A great learning project if you want to understand how the low level stuff (originally) worked. 
 
 ## Overview ##
 Unfortunately, at the time of writing the project - I was not concerned with/aware of version control. So what you see is what you get.
