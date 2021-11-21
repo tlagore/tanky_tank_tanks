@@ -3,10 +3,13 @@ A 2d game developed for the Atari ST using the STEem Engine Atari Emulator.
 
 Here's a little video of an [early version](https://www.youtube.com/watch?v=MACQNG1RRLw) in action if you can get it running: 
 
-## Overview ##
-Tanky tank tanks was a project written for the [STEem Engine Atari Emulator](http://tamw.atari-users.net/steem.htm).
+## Introduction ##
+Tanky tank tanks was a project written for the 1984 Atari using the [STEem Engine Atari Emulator](http://tamw.atari-users.net/steem.htm).
 It was written as a school project for a course, Computing Machinery 2. 
 
+This project interacts directly with (virtual) hardware to create sound effects, music, animations, and more. A great learning project if you want to understand how the low level stuff (originally) worked. 
+
+## Overview ##
 Unfortunately, at the time of writing the project - I was not concerned with/aware of version control. So what you see is what you get.
 
 I took a great interest in this project and felt it deserved to be maintained on some level of version control and made it open source  in case anyone wanted to examine the code and/or use the code to continue the project.
