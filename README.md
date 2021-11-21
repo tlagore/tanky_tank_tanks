@@ -1,7 +1,7 @@
 # tanky_tank_tanks
 A 2d game developed for the Atari ST using the STEem Engine Atari Emulator.
 
-Here's a gross little hand recorded video of an [early version](https://www.youtube.com/watch?v=MACQNG1RRLw) in action if you can get it running: 
+Here's a gross little hand recorded video of an [early version](https://www.youtube.com/watch?v=MACQNG1RRLw) in action if you can get it running
 
 ## Introduction ##
 Tanky tank tanks was a project written for the 1984 Atari using the [STEem Engine Atari Emulator](http://tamw.atari-users.net/steem.htm).
