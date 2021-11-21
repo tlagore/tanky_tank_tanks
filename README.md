@@ -14,7 +14,7 @@ Unfortunately, at the time of writing the project - I was not concerned with/awa
 
 I took a great interest in this project and felt it deserved to be maintained on some level of version control and made it open source  in case anyone wanted to examine the code and/or use the code to continue the project.
 
-##Installation##
+## Installation ##
 Unfortunately it has been a loooong time since I have used/run this code, but essentially head on over to the STEem web page (linked above).
 
 Download the engine and place the code somewhere in the virtual file system of the emulator. Thankfully, I at least was competent enough at the time to create a makefile for every version (I believe every version.. the very earliest ones might not, but they do not really matter in terms of the project). Should be able to just compile and run... that is up until stage 10C, explained below.
