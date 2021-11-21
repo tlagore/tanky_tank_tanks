@@ -1,6 +1,7 @@
 # tanky_tank_tanks
 A 2d game developed for the Atari ST using the STEem Engine Atari Emulator.
 
+Here's a little video of an [early version](https://www.youtube.com/watch?v=MACQNG1RRLw) in action if you can get it running: 
 
 ## Overview ##
 Tanky tank tanks was a project written for the [STEem Engine Atari Emulator](http://tamw.atari-users.net/steem.htm).
@@ -13,7 +14,7 @@ I took a great interest in this project and felt it deserved to be maintained on
 ##Installation##
 Unfortunately it has been a loooong time since I have used/run this code, but essentially head on over to the STEem web page (linked above).
 
-Download the engine and place the code somewhere in the virtual file system of the emulator. Thankfully, I at least was competent enough at the time to create a makefile for every version (I believe ever version.. the very earliest ones might not, but they do not really matter in terms of the project). Should be able to just compile and run... that is up until stage 10C, explained below.
+Download the engine and place the code somewhere in the virtual file system of the emulator. Thankfully, I at least was competent enough at the time to create a makefile for every version (I believe every version.. the very earliest ones might not, but they do not really matter in terms of the project). Should be able to just compile and run... that is up until stage 10C, explained below.
 
 ##Stages##
 Each stage is a single iteration of the project, implementing new features. Unfortunately, I have somehow lost Stage10A and Stage10B. Stage10C thankfully encompasses both 10A and 10B. 
